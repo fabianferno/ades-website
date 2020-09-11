@@ -227,6 +227,7 @@ h6 {
   position: relative;
   background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
+  margin-top: 75px;
 }
 
 #intro .intro-info h2 {
@@ -702,7 +703,7 @@ h6 {
 --------------------------------*/
 
 #call-to-action {
-  background: #2d2b46;
+  background: #1158d8;
   background-size: cover;
   padding: 40px 0;
 }
