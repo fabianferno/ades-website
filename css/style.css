@@ -257,12 +257,12 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1158d8;
+  background: #4f82e2;
 }
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
-  background: #0a98c0;
+  background: #1158d8;
 }
 
 /*--------------------------------------------------------------
@@ -648,7 +648,7 @@ h6 {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
-  text-align: left;
+  text-align: center;
 }
 
 /* Why Us Section
