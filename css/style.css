@@ -21,7 +21,7 @@ body {
 }
 
 .bg-blue {
-  background: #1158d8;
+  background: #002f86;
 }
 
 a {
@@ -262,7 +262,7 @@ h6 {
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
-  background: #1158d8;
+  background: #0339dd;
 }
 
 /*--------------------------------------------------------------
@@ -317,7 +317,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.281);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: ease all 0.3s;
 }
@@ -523,7 +523,6 @@ h6 {
 }
 
 #about .about-content h2 {
-  color: #413e66;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -549,7 +548,6 @@ h6 {
   padding-right: 4px;
   color: #1158d8;
 }
-
 #about .about-img {
   position: relative;
   margin: 30px 30px 30px 30px;
@@ -692,7 +690,7 @@ h6 {
   font-weight: bold;
   font-size: 48px;
   display: block;
-  color: #555186;
+  color: #062c72;
 }
 
 #why-us .counters p {
@@ -1278,7 +1276,7 @@ h6 {
   font-size: 18px;
   display: inline-block;
   background: #1158d8;
-  color: #1158d8;
+  color: #ffffff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1290,8 +1288,9 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0a98c0;
+  background: #ffffff;
   color: #1158d8;
+  border: #1158d8;
 }
 
 #footer .footer-top h4 {
