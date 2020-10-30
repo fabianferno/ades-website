@@ -39,11 +39,6 @@ img {
   height: auto;
 }
 
-.rocket img {
-  max-width: 30vh;
-  height: auto;
-}
-
 .scene,
 .layer {
   display: block;
