@@ -1,68 +1,887 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-	<meta charset="utf-8" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
     <title>airdesign engineered solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
-	<meta content="" name="description" />
-	
-	<!-- mailchuimp -integrations start-->
-	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/440983569752f3cfdc0c944d8/7c7283fe9dda12c352bb3a822.js");</script>
-	<!-- mailchuimp -integrations end -->
-	
-	<!-- Favicons -->
+    <meta content="" name="description" />
+
+    <!-- Favicons -->
     <link href="img/favicon.png" rel="icon" />
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'><link rel="stylesheet" href="./style.css">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<main>
-	<ul id="scene" 
-		data-friction-x="0.1"
-		data-friction-y="0.1"
-		data-scalar-x="25"
-		data-scalar-y="15"
-		data-limit-y="50"
-		class="scene">
-		<li class="layer" data-depth="0.40">
-			<div class="content">
-				<h1 id="title">Site Launching Soon!</h1>
-				<p>We are working hard on our awesome new website. Stay Tuned!</p>
-				<img src="logo.png" style="height: 100px;" alt="Site Launching Soon!" />
-			</div>
-		</li>
-		<li class="layer" data-depth="1.00">
-			<div class="footer"></div>
-		</li>
-		<li class="layer" data-depth="0.65">
-			<div class="cloud-back">
-				<img src="https://res.cloudinary.com/jasonheecs/image/upload/v1480353347/construction/rocket_cloud_back.svg" alt="Site Launching Soon!" />
-			</div>
-		</li>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-		<li class="layer" data-depth="0.70">
-			<div class="rocket">
-				<img src="https://res.cloudinary.com/jasonheecs/image/upload/v1480353347/construction/rocket.svg" alt="Site Launching Soon!" />
-			</div>
-		</li>
-		<!-- <li class="layer" data-depth="0.70">
-			<div class="rocket">
-				<img src="logo.png" alt="Site Launching Soon!" />
-			</div>
-		</li> -->
-		<li class="layer" data-depth="0.75">
-			<div class="cloud-front">
-				<img src="https://res.cloudinary.com/jasonheecs/image/upload/v1480353347/construction/rocket_cloud_front.svg" alt="Site Launching Soon!" />
-			</div>
-		</li>
-	</ul>
-</main>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js'></script><script  src="./script.js"></script>
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-</body>
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+    Theme Name: 
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  </head>
+
+  <body>
+    <!--==========================
+    Header
+    ============================-->
+    <header id="header">
+      <div id="topbar">
+        <div class="container">
+          <div class="social-links">
+            <a href="https://twitter.com/ADES_pvt_ltd" class="twitter"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/airdesignengineeredsolutions"
+              class="facebook"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/airdesign-engineered-solutions-pvt-ltd"
+              class="linkedin"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo float-left">
+          <!-- Uncomment below if you prefer to use an image logo -->
+
+          <a href="#header" class="scrollto">
+            <h1 class="text-lowercase font-weight-bold">
+              <img src="img/logo.png" alt="ades" class="img-fluid" />
+            </h1>
+          </a>
+        </div>
+
+        <nav class="main-nav float-right d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#team">Team</a></li>
+            <!-- <li class="drop-down">
+              <a href="">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="drop-down">
+                  <a href="#">Drop Down 2</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="#">Drop Down 5</a></li>
+              </ul>
+            </li> -->
+            <li><a href="#footer">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- .main-nav -->
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro" class="clearfix">
+      <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+          <div class="col-md-6 intro-info order-md-first order-last">
+            <h2 class="gothic">
+              <span>air design</span>
+              <br />engineered <br />solutions pvt ltd
+            </h2>
+            <div>
+              <a href="#about" class="btn-get-started scrollto"> Get to Us! </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 intro-img order-md-last order-first">
+            <img src="img/intro-img.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #intro -->
+
+    <main id="main">
+      <!--==========================
+      About Us Section
+    ============================-->
+      <section id="about" class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="about-img">
+                <img src="img/about-img.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6">
+              <div class="about-content container">
+                <h2>About Us</h2>
+                <p class="font-weight-light h4 pb-2">
+                  ADES is a multi-discipline MEP consulting engineering firm
+                  established in the year 2008 with a Young & Dynamic Team.
+                </p>
+                <p>
+                  ADES is a team of professionals with decades of Experience in
+                  Design Buildings, Core Industries, Commercial Complexes,
+                  Hospitality Sectors, Residential Towers, Power & Solar Plant
+                  services on sustainable framework empowered by advanced
+                  technology & analytics with Cost Effective Solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #about -->
+
+      <!--==========================
+      Scope of Work Section
+    ============================-->
+      <section
+        id="services"
+        class="section-bg"
+        style="background-color: #1158d8"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h3 class="text-light">Scope of Work</h3>
+            <p class="text-light">Our lineup of HVAC services</p>
+          </header>
+
+          <div class="row d-flex justify-content-center">
+            <div
+              class="col-md-6 col-lg-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #fceef3">
+                  <i
+                    class="ion-ios-analytics-outline"
+                    style="color: #ff689b"
+                  ></i>
+                </div>
+                <h4 class="title">
+                  <a href="">MEP</a>
+                </h4>
+                <p class="description">Certified Services.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #fff0da">
+                  <i
+                    class="ion-ios-bookmarks-outline"
+                    style="color: #e98e06"
+                  ></i>
+                </div>
+                <h4 class="title">
+                  <a href="">BIM</a>
+                </h4>
+                <p class="description">Evolving with Technology.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #e6fdfc">
+                  <i class="ion-ios-paper-outline" style="color: #3fcdc7"></i>
+                </div>
+                <h4 class="title"><a href="">GREEN</a></h4>
+                <p class="description">Sustainable Engineering</p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #e6fdfc">
+                  <i class="ion-ios-paper-outline" style="color: #3fcdc7"></i>
+                </div>
+                <h4 class="title"><a href="">WELL</a></h4>
+                <p class="description">Performance based Standards.</p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #e6fdfc">
+                  <i class="ion-ios-paper-outline" style="color: #3fcdc7"></i>
+                </div>
+                <h4 class="title"><a href="">ISPA</a></h4>
+                <p class="description">Accurate Analysis</p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #e6fdfc">
+                  <i class="ion-ios-paper-outline" style="color: #3fcdc7"></i>
+                </div>
+                <h4 class="title"><a href="">IBMS</a></h4>
+                <p class="description">Comprehensive System.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #services -->
+
+      <!--==========================
+      Why Us Section
+    ============================-->
+      <section id="why-us" class="wow fadeIn card">
+        <div class="container-fluid">
+          <header class="section-header">
+            <h3>Why choose us?</h3>
+            <p>
+              Innovations from inception to implementation. Clients respect us
+              because of our Passion, Commitments and Business Ethics.
+            </p>
+          </header>
+
+          <div class="row card-body shadow-lg">
+            <div class="col-lg-4">
+              <div id="why-us-img" class="pl-3 justify-content-center">
+                <img src="img/why-us.jpeg" alt="" class="img-fluid rounded" />
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="why-us-content">
+                <p>
+                  Being in the industry for more than two decades, our
+                  experienced professionals have the resources and expertise to
+                  deliver planning and design of projects effectively and
+                  efficiently.
+                </p>
+                <p>
+                  Our team of experts posses design experience in various
+                  geographical locations across the world.
+                </p>
+
+                <div class="align-self-center">
+                  <div class="features wow bounceInUp clearfix">
+                    <i class="fa fa-diamond" style="color: #f058dc"></i>
+                    <h4>Process Oriented</h4>
+                    <p>
+                      <strong>airdesign engineered solutions</strong> a process
+                      driven & service-oriented design firm. We assure our
+                      clients of Principals involvement and commitment on every
+                      project.
+                    </p>
+                  </div>
+
+                  <div class="features wow bounceInUp clearfix">
+                    <i class="fa fa-object-group" style="color: #ffb774"></i>
+                    <h4>Value Engineering</h4>
+                    <p>
+                      Developing buildings with environmental and human health
+                      safeguards in place seems to be the path forward for most
+                      professionals like Architects, Building Designers and
+                      Engineers.
+                    </p>
+                  </div>
+
+                  <div class="features wow bounceInUp clearfix">
+                    <i class="fa fa-language" style="color: #589af1"></i>
+                    <h4>Time conscious</h4>
+                    <p>
+                      On-time delivery and Project Commitments. We take pride in
+                      delivering the quality while maintaining the time equity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row counters">
+            <div class="col-lg-4 col-6 text-center">
+              <span data-toggle="counter-up">230</span>
+
+              <p>Clients</p>
+            </div>
+
+            <div class="col-lg-4 col-6 text-center">
+              <span data-toggle="counter-up">310</span>
+              <p>Projects</p>
+            </div>
+
+            <div class="col-lg-4 col-6 text-center">
+              <span data-toggle="counter-up">13</span>
+              <p>Years of Expertise</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==========================
+      Call To Action Section
+    ============================-->
+      <section id="call-to-action" class="wow fadeInUp bg-blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="cta-title">Client first approach</h3>
+              <p class="cta-text">
+                “Client First” is a simple concept, a cultural strategy that we
+                use to put our customers at the center of everything we do. Why
+                wait? Write to us, we'll get there right away!
+              </p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a
+                class="cta-btn align-middle"
+                href="mailto:info@ades.in?subject=Enquiry&body=Hello ADES! I would like to know more."
+                >Write to Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #call-to-action -->
+
+      <!--==========================
+      Portfolio Section
+    ============================-->
+      <section id="portfolio" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3 class="section-title">Gallery</h3>
+          </header>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">App 1</a></h4>
+                  <p>App</p>
+                  <div>
+                    <a
+                      href="img/portfolio/app1.jpg"
+                      data-lightbox="portfolio"
+                      data-title="App 1"
+                      class="link-preview"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-web"
+              data-wow-delay="0.1s"
+            >
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Experienced</a></h4>
+                  <p>Engineers</p>
+                  <div>
+                    <a
+                      href="img/portfolio/web3.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Web 3"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              data-wow-delay="0.2s"
+            >
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Apollo Tyres</a></h4>
+                  <p>HVAC design</p>
+                  <div>
+                    <a
+                      href="img/portfolio/app2.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="App 2"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Card 2</a></h4>
+                  <p>Card</p>
+                  <div>
+                    <a
+                      href="img/portfolio/card2.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Card 2"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-web"
+              data-wow-delay="0.1s"
+            >
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Web 2</a></h4>
+                  <p>Web</p>
+                  <div>
+                    <a
+                      href="img/portfolio/web2.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Web 2"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-app"
+              data-wow-delay="0.2s"
+            >
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">ISHRAE</a></h4>
+                  <p>Board Member</p>
+                  <div>
+                    <a
+                      href="img/portfolio/app3.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="App 3"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Card 1</a></h4>
+                  <p>Card</p>
+                  <div>
+                    <a
+                      href="img/portfolio/card1.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Card 1"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-card"
+              data-wow-delay="0.1s"
+            >
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/card3.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Card 3</a></h4>
+                  <p>Card</p>
+                  <div>
+                    <a
+                      href="img/portfolio/card3.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Card 3"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-web"
+              data-wow-delay="0.2s"
+            >
+              <div class="portfolio-wrap">
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4><a href="#">Web 1</a></h4>
+                  <p>Web</p>
+                  <div>
+                    <a
+                      href="img/portfolio/web1.jpg"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Web 1"
+                      title="Preview"
+                      ><i class="ion ion-eye"></i
+                    ></a>
+                    <a href="#" class="link-details" title="More Details"
+                      ><i class="ion ion-android-open"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #portfolio -->
+
+      <!--==========================
+      Clients Section
+    ============================-->
+      <!-- <section id="testimonials">
+        <div class="container">
+          <header class="section-header">
+            <h3>Testimonials</h3>
+          </header>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="owl-carousel testimonials-carousel wow fadeInUp">
+                <div class="testimonial-item">
+                  <img
+                    src="img/testimonial-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.
+                  </p>
+                </div>
+
+                <div class="testimonial-item">
+                  <img
+                    src="img/testimonial-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                  </p>
+                </div>
+
+                <div class="testimonial-item">
+                  <img
+                    src="img/testimonial-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                  </p>
+                </div>
+
+                <div class="testimonial-item">
+                  <img
+                    src="img/testimonial-4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- #testimonials -->
+
+      <!--==========================
+      Team Section
+    ============================-->
+      <section id="team" class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h3>Founder and Director</h3>
+            <p>
+              “Always deliver more than expected.”– Larry Page, co-founder of
+              Google
+            </p>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-6 d-flex wow fadeInUp">
+              <div class="member">
+                <img src="img/team-1.jpg" class="img-fluid" alt="" />
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Ferno Susai A</h4>
+                    <span>Founder and Director</span>
+                    <div class="social">
+                      <a href=""><i class="fa fa-twitter"></i></a>
+                      <a href=""><i class="fa fa-facebook"></i></a>
+                      <a href=""><i class="fa fa-google-plus"></i></a>
+                      <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #team -->
+
+      <!--==========================
+      Clients Section
+    ============================-->
+      <section id="clients" class="wow fadeInUp">
+        <div class="container">
+          <header class="section-header">
+            <h3>Our Clients</h3>
+          </header>
+
+          <div class="owl-carousel clients-carousel">
+            <img src="img/clients/client-1.png" alt="" />
+            <img src="img/clients/client-2.png" alt="" />
+            <img src="img/clients/client-3.png" alt="" />
+            <img src="img/clients/client-4.png" alt="" />
+            <img src="img/clients/client-5.png" alt="" />
+            <img src="img/clients/client-6.png" alt="" />
+            <img src="img/clients/client-7.png" alt="" />
+            <img src="img/clients/client-8.png" alt="" />
+            <img src="img/clients/client-9.png" alt="" />
+            <img src="img/clients/client-10.png" alt="" />
+            <img src="img/clients/client-11.png" alt="" />
+            <img src="img/clients/client-12.png" alt="" />
+            <img src="img/clients/client-13.png" alt="" />
+            <img src="img/clients/client-14.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- #clients -->
+    </main>
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" class="section-bg">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Terms of service</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>
+                      109, Godavari St, <br />
+                      Chinmaya Nagar,<br />
+                      Chennai - 600 092, Tamilnadu<br />
+                      Phone:&nbsp;&nbsp;<strong>+91 97909 51112</strong><br />
+                      Email:&nbsp;&nbsp;<strong>info@ades.in</strong><br />
+                    </p>
+                  </div>
+
+                  <div class="social-links">
+                    <a href="https://twitter.com/ADES_pvt_ltd" class="twitter"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/airdesignengineeredsolutions"
+                      class="facebook"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                    <!-- <a href="#" class="instagram"
+                      ><i class="fa fa-instagram"></i
+                    ></a> -->
+                    <a
+                      href="https://www.linkedin.com/company/airdesign-engineered-solutions-pvt-ltd"
+                      class="linkedin"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 intro-img order-md-last order-first">
+              <img src="img/intro-img01.svg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright
+          <strong>airdesign engineered solutions pvt ltd</strong>. All Rights
+          Reserved
+        </div>
+        <div class="credits">Designed by <a href="#">Skywalker</a></div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
