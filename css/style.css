@@ -4,6 +4,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.mapouter {
+  position: relative;
+  height: 200px;
+  width: 400px;
+}
+.gmap_canvas {
+  overflow: none;
+  background: none !important;
+  height: 200px;
+  width: 400px;
+}
+
 body {
   background: #fff;
   color: #444;
@@ -493,6 +505,8 @@ h6 {
   color: #535074;
   width: 50%;
 }
+
+
 
 /* Section with background
 --------------------------------*/
@@ -986,12 +1000,12 @@ h6 {
   right: 0;
   transition: 0.2s;
   padding: 15px 0;
-  background: rgba(29, 28, 41, 0.6);
+  background: rgba(36, 36, 36, 0.849);
 }
 
 #team .member .member-info-content {
   transition: margin 0.2s;
-  height: 40px;
+  height: 20px;
   transition: height 0.4s;
 }
 
@@ -1000,7 +1014,7 @@ h6 {
 }
 
 #team .member:hover .member-info-content {
-  height: 80px;
+  height: 55px;
 }
 
 #team .member h4 {
@@ -1084,7 +1098,7 @@ h6 {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #d1d1d1;
+  background: #ffffff;
 }
 
 #footer .footer-top .footer-info {
